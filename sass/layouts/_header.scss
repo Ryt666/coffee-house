@@ -1,0 +1,55 @@
+.header__logo-img {
+  width: 100px;
+  height: 60px;
+}
+
+.header__top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.header__nav-list {
+  display: flex;
+  gap: 4rem;
+  @include font(1.6rem, 600, 150%);
+}
+
+li {
+  cursor: pointer;
+}
+
+.header__title{
+    background-position: center center;    background-size: cover;
+    background-image: url('img/header/img-hero.jpg');
+    border-radius: 4rem;
+}
+
+.header__title-main {
+    display: block;
+    padding: 10rem;
+    padding-right: 73rem;   
+}
+
+.header__span {
+    @include font(7.2rem, 600, 105%, $color-accent, italic);
+  }
+
+.header__title-text {
+  @include font(7.2rem, 600, 105%, $color-light);
+}
+
+.header__title-p {
+  @include font(1.6rem, 300, 150%, $color-light);
+  max-width: 53rem  ;
+}
+
+.header__title-btn {
+  @include font(1.6rem, 600, 150%, $color-dark);
+  border-radius: 10rem;
+}
+
+.header__title-text, .header__title-p, .header__title-btn {
+    margin-bottom: 4rem;
+}

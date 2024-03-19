@@ -1,12 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Coffee house</title>
-</head>
-<body>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__top-row">
+          <div class="header__logo">
+           <a href="#!"> <img src="img/header/logo.svg" alt="logo" class="header__logo-img"></a>
+          </div>
+          <div class="header__nav">
+            <ul class="header__nav-list">
+                <li>Favorite coffee</li>
+                <li>About</li>
+                <li>Mobile app</li>
+                <li>Contact us</li>
+            </ul>
+          </div>
+          <div class="header__menu">
+            <a href=""><img src="img/header/menu-item.svg"></a>
+          </div>
+        </div>
+        <div class="header__title">
+          <div class="header__title-main">
+            <h1 class="header__title-text">
+                <span class="header__span"> Enjoy</span> premium coffee at our charming cafe
+               </h1>
+               <p class="header__title-p">
+                 With its inviting atmosphere and delicious coffee options, the
+                 Coffee House Resource is a popular destination for coffee lovers and
+                 those seeking a warm and inviting space to enjoy their favorite
+                 beverage.
+               </p>
+               <button class="header__title-btn">Menu</button>
+          </div>
+        
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="favorite-coffee"></section>
+      <section class="about"></section>
+      <section class="mobile-app"></section>
+    </main>
+    <footer class="footer"></footer>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
