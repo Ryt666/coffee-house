@@ -322,4 +322,28 @@ li {
   height: 43rem;
 }
 
+.mobile-app__container {
+  display: flex;
+  gap: 10rem;
+}
+
+.mobile-app__offer {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  justify-content: center;
+}
+
+.mobile-app__buttons {
+  display: flex;
+  gap: 2rem;
+}
+
+.mobile-app__button:hover {
+  background: #665F55;
+  color: #E1D4C9;
+  transition: all 0.1s ease-out;
+  border-radius: 4rem;
+}
+
 /*# sourceMappingURL=style.css.map */
