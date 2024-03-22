@@ -1,0 +1,33 @@
+.about__title{
+    text-align:justify;
+    letter-spacing:0.1rem;
+    padding-bottom: 2rem;
+}
+
+.about__gallery{
+    display: flex;
+    justify-content: center;
+    gap:4rem;
+    overflow: hidden;
+}
+
+.about__gallery-card{
+display: flex;
+flex-direction: column;
+gap: 4rem;
+
+>* {
+    overflow: hidden;
+    border-radius: 2rem;
+    transition: all 0.5s ease-in-out;  
+}
+}
+.about__gallery-card-big{
+    width: 66rem;
+    height: 59rem; 
+   
+}
+.about__gallery-card-little{
+    width: 66rem;
+    height: 43rem;
+}

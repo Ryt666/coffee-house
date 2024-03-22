@@ -8,6 +8,29 @@ body{
 }
 
 .container{
-    margin: auto;
-    padding: 0 4rem;   
+    margin: auto;   
+    padding: 0 4rem;
+    padding-bottom: 10rem;
+    max-width: 136rem;   
+}
+
+h1{
+    @include font(7.2rem, 600, 105%, $color-light);
+}
+
+h2{
+    @include font(6rem, 600, 125%, $color-dark);
+}
+
+span{
+    color:$color-accent;
+    font-style: italic;
+}
+
+h3{
+    @include font(2.4rem, 600, 125%, $color-dark);
+}
+
+p{
+    @include font(1.6rem, 300, 150%, $color-dark);
 }
