@@ -26,14 +26,14 @@
           </div>
           <div class="header__nav">
             <ul class="header__nav-list">
-              <li>Favorite coffee</li>
-              <li>About</li>
-              <li>Mobile app</li>
-              <li>Contact us</li>
+              <li class="header__nav-list-li">Favorite coffee</li>
+              <li class="header__nav-list-li">About</li>
+              <li class="header__nav-list-li">Mobile app</li>
+              <li class="header__nav-list-li">Contact us</li>
             </ul>
           </div>
           <div class="header__menu">
-            <a href=""><img src="img/header/menu-item.svg" /></a>
+            <a href=""><img class="header__menu-img"src="img/header/menu-item.svg" /></a>
           </div>
         </div>
         <div class="header__title">
@@ -45,7 +45,17 @@
               and those seeking a warm and inviting space to enjoy their
               favorite beverage.
             </p>
-            <button class="header__title-btn">Menu</button>
+            
+              <button class="header__title-btn">Menu <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="header__title-btn-img">
+                <path d="M14.166 9.76667V11.6667C14.166 14.8883 11.5543 17.5 8.33268 17.5C5.11102 17.5 2.49935 14.8883 2.49935 11.6667V9.76667C2.49935 9.4353 2.76798 9.16667 3.09935 9.16667H13.566C13.8974 9.16667 14.166 9.4353 14.166 9.76667Z" stroke="#403F3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"class="header__title-btn-img"/>
+                <path d="M9.99935 7.49996C9.99935 6.66663 10.5946 5.83329 11.7851 5.83329V5.83329C13.1 5.83329 14.166 4.7673 14.166 3.45234V2.91663" stroke="#403F3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"class="header__title-btn-img"/>
+                <path d="M6.66732 7.5V7.08333C6.66732 5.70262 7.78661 4.58333 9.16732 4.58333V4.58333C10.0878 4.58333 10.834 3.83714 10.834 2.91667V2.5" stroke="#403F3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"class="header__title-btn-img"/>
+                <path d="M13.334 9.16663H15.4173C16.5679 9.16663 17.5007 10.0994 17.5007 11.25C17.5007 12.4006 16.5679 13.3333 15.4173 13.3333H14.1673" stroke="#403F3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"class="header__title-btn-img"/>
+                </svg>
+                </button>
+           
+
+          
           </div>
         </div>
       </div>
@@ -109,11 +119,16 @@
             </div>
 
             <button class="favorite-coffee__btn-left">
-              <img src="img/favorite-coffee/button-left.svg" alt="left" />
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="favorite-coffee__svg">
+                <path d="M36.5 30H24M24 30L30 24M24 30L30 36" stroke-linecap="round" stroke-linejoin="round" class="favorite-coffee__svg"/>
+                </svg>
             </button>
 
             <button class="favorite-coffee__btn-right">
-              <img src="img/favorite-coffee/button-right.svg" alt="left" />
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="favorite-coffee__svg">
+                <path d="M24 30H36.5M36.5 30L30.5 24M36.5 30L30.5 36" stroke="#403F3D"  class="favorite-coffee__svg"/>
+                </svg>
+                
             </button>
 
             <div class="favorite-coffee__controls">
@@ -136,18 +151,18 @@
 
           <div class="about__gallery">
             <div class="about__gallery-card">
-              <div class="about__gallery-card-big">
+              <div class="about__gallery-card-img about__gallery-card-big--hor">
 <img src="./img/about/about-1.jpg" alt="1">
               </div>
-              <div class="about__gallery-card-little">
+              <div class="about__gallery-card-img about__gallery-card-little--vert">
 <img src="./img/about/about-2.jpg" alt="2">
               </div>
             </div> 
             <div class="about__gallery-card">
-              <div class="about__gallery-card-little">
+              <div class="about__gallery-card-img about__gallery-card-little--vert">
                 <img src="./img/about/about-3.jpg" alt="3">
                               </div>
-                              <div class="about__gallery-card-big">
+                              <div class="about__gallery-card-img about__gallery-card-big--hor">
                 <img src="./img/about/about-4.jpg" alt="4">
                               </div>
             </div>
@@ -162,8 +177,31 @@
               <h2><span>Download</span> our apps to start ordering</h2>
               <p>Download the Resource app today and experience the comfort of ordering your favorite coffee from wherever you are</p>
               <div class="mobile-app__buttons">
-                <button class="mobile-app__button"><img  src="img/mobile-app/button-app-store.svg" alt=""></button>
-                <button class="mobile-app__button"><img src="img/mobile-app/button-google-play.svg" alt=""></button>
+                <button class="mobile-app__button">
+                  <svg width="28" height="33" viewBox="0 0 28 33" fill="none" xmlns="http://www.w3.org/2000/svg" class="mobile-app__svg">
+                    <path d="M22.7073 17.6307C22.6704 13.6324 26.065 11.6872 26.2203 11.5966C24.2977 8.86366 21.3178 8.49026 20.2707 8.46048C17.7679 8.20369 15.3403 9.92062 14.0654 9.92062C12.765 9.92062 10.8017 8.48529 8.68579 8.52747C5.96293 8.56841 3.41566 10.1055 2.0186 12.4923C-0.864579 17.359 1.28572 24.5108 4.04802 28.4446C5.42981 30.3712 7.04444 32.5223 9.15784 32.4466C11.2254 32.3635 11.9978 31.1614 14.4929 31.1614C16.9651 31.1614 17.6903 32.4466 19.8457 32.3983C22.0647 32.3635 23.4618 30.463 24.7952 28.519C26.392 26.3108 27.0333 24.1362 27.0588 24.0245C27.0066 24.0071 22.7493 22.4229 22.7073 17.6307Z" fill="#403F3D" class="mobile-app__svg"/>
+                    <path d="M18.6357 5.87268C19.7477 4.51675 20.5086 2.67205 20.2974 0.800049C18.6879 0.86952 16.675 1.88554 15.5159 3.21169C14.4903 4.38029 13.5742 6.29571 13.8109 8.097C15.6189 8.2285 17.4753 7.20752 18.6357 5.87268Z" fill="#403F3D"class="mobile-app__svg"/>
+                    </svg>
+                    
+                    <div class="mobile-app__text">
+                      <p class="mobile-app__p">Available on the</p>
+                      <p class="mobile-app__p-app">Apple Store</p>
+                    </div>
+
+                </button>
+                <button class="mobile-app__button">
+                  <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="mobile-app__svg">
+                    <path d="M3.7558 3.20297C3.39335 3.57289 3.18359 4.14884 3.18359 4.89471V31.4994C3.18359 32.2453 3.39335 32.8212 3.7558 33.1911L3.84525 33.2723L19.1359 18.37V18.0181L3.84525 3.11575L3.7558 3.20297Z" fill="#403F3D" class="mobile-app__svg"/>
+                    <path d="M26.0776 23.34L20.9863 18.37V18.0181L26.0837 13.0482L26.1979 13.1128L32.2345 16.4617C33.9573 17.4121 33.9573 18.976 32.2345 19.9324L26.1979 23.2753L26.0776 23.34Z" fill="#403F3D"class="mobile-app__svg"/>
+                    <path d="M25.2733 24.2007L20.0617 19.1195L4.68164 34.1166C5.25384 34.7031 6.18695 34.7737 7.24807 34.1873L25.2733 24.2007Z" fill="#403F3D"class="mobile-app__svg"/>
+                    <path d="M25.2733 12.1876L7.24807 2.20103C6.18695 1.62058 5.25384 1.69125 4.68164 2.27772L20.0617 17.2688L25.2733 12.1876Z" fill="#403F3D"class="mobile-app__svg"/>
+                    </svg>
+                    <div class="mobile-app__text">
+                      <p class="mobile-app__p">Available on the</p>
+                      <p class="mobile-app__p-app">Play Market</p>
+                    </div>
+                </button>
+                
               </div>
             </div>
             <div class="mobile-app__img">
@@ -173,7 +211,52 @@
         </div>
       </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__inner">
+          <div class="footer__sections">
+            <div class="footer__left-section">
+              <h2 class="footer__h2">Sip, Savor, Smile. <br><span>It’s coffee time!</span></h2>
+              <div class="footer__social-icons">
+                <div class="footer__social-icon">
+                  <a href="https://twitter.com/">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer__svg">
+                      <path d="M23 3.01006C23 3.01006 20.9821 4.20217 19.86 4.54006C19.2577 3.84757 18.4573 3.35675 17.567 3.13398C16.6767 2.91122 15.7395 2.96725 14.8821 3.29451C14.0247 3.62177 13.2884 4.20446 12.773 4.96377C12.2575 5.72309 11.9877 6.62239 12 7.54006V8.54006C10.2426 8.58562 8.50127 8.19587 6.93101 7.4055C5.36074 6.61513 4.01032 5.44869 3 4.01006C3 4.01006 -1 13.0101 8 17.0101C5.94053 18.408 3.48716 19.109 1 19.0101C10 24.0101 21 19.0101 21 7.51006C20.9991 7.23151 20.9723 6.95365 20.92 6.68006C21.9406 5.67355 23 3.01006 23 3.01006Z" stroke="round" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                  </a>
+                </div>
+                <div class="footer__social-icon">
+                  <a href="https://www.instagram.com/">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer__svg">
+<path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="round" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16Z" stroke="round"/>
+<path d="M17.5 6.51L17.51 6.49889" stroke="round" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                  </a>
+                </div>
+                <div class="footer__social-icon">
+                  <a href="https://www.facebook.com/?locale=ru_RU"> 
+                    <svg height="24"width="13" viewBox="0 0 13 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer__svg">
+                    <path d="M12 1H9C7.67392 1 6.40215 1.52678 5.46447 2.46447C4.52678 3.40215 4 4.67392 4 6V9H1V13H4V21H8V13H11L12 9H8V6C8 5.73478 8.10536 5.48043 8.29289 5.29289C8.48043 5.10536 8.73478 5 9 5H12V1Z" stroke-linejoin="round" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg></a>
+                </div>
+              </div>
+            </div>
+            <div class="footer__right-section">
+              <div class="footer__title">
+                <h3 class="footer-title__text">Contact us</h3>
+              </div>
+              <div class="footer__contacts">
+                <p class="footer__contacts-info"><a class="footer__contact-link"href="#!"> <img class="footer__contacts-img"src="img/footer/pin-alt.svg" alt="pin">8558 Green Rd.,  LA</a></p>
+                <p class="footer__contacts-info"><a class="footer__contact-link"href="tel:+1 (603) 555-0123"><img class="footer__contacts-img"src="img/footer/phone.svg" alt="phone">+1 (603) 555-0123</a></p>
+                <p class="footer__contacts-info"><img class="footer__contacts-img"src="img/footer/clock.svg" alt="clock">Mon-Sat: 9:00 AM – 23:00 PM</p>
+              </div>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+    </footer>
     <script src="app.js"></script>
   </body>
 </html>

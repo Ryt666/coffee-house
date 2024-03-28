@@ -25,18 +25,32 @@
     position: absolute;
     left:1%;
     top:40%;
+    border-radius: 100%;
+    border: 1px solid $color-border-dark;
+    padding: 0.5rem 0.6rem;
  }
 
  .favorite-coffee__btn-right {
     position: absolute;
     right:1%;
     top:40%;
+    border-radius: 100%;
+    border: 1px solid $color-border-dark;
+    padding: 0.5rem 0.6rem; 
+ }
+.favorite-coffee__svg{
+    stroke: $color-border-dark;
+}
+.favorite-coffee__btn-left:hover, .favorite-coffee__btn-right:hover{
+    background-color: $color-border-dark;
+    transition: all 0.5s;
+}
+ .favorite-coffee__btn-left:hover .favorite-coffee__svg{
+    stroke: $color-light;
  }
 
- .favorite-coffee__btn-left:hover, .favorite-coffee__btn-right:hover{
-    background-color: $color-border-dark;
-    border-radius: 100%;
-    transition: .01s ease;
+ .favorite-coffee__btn-right:hover .favorite-coffee__svg{
+    stroke: $color-light;
  }
 .favorite-coffee__title{
 text-align: center;

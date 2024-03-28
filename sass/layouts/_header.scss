@@ -2,7 +2,9 @@
   width: 100px;
   height: 60px;
 }
-
+.header__logo-img:hover{
+  box-shadow:10px 5px 10px $color-border-light;
+}
 .header__top-row {
   display: flex;
   justify-content: space-between;
@@ -27,6 +29,10 @@ li {
     border-radius: 4rem;
 }
 
+.header__menu-img:hover{
+  border-bottom: 3px solid $color-border-dark;
+  transition: all 0.1s ease-in-out;
+}
 .header__title-main {
     display: block;
     padding: 10rem;
@@ -45,4 +51,17 @@ li {
 
 .header__title-text, .header__title-p, .header__title-btn {
     margin-bottom: 4rem;
+}
+
+.header__nav-list-li:hover{
+  border-bottom: 3px solid $color-border-dark;
+  transition: all 0.1s ease-in-out;
+}
+.header__title-btn-img{
+position: absolute;
+  stroke: $color-light;
+}
+.header__title-btn:hover .header__title-btn-img{
+stroke: $color-dark;
+transition: all 0.3s;
 }

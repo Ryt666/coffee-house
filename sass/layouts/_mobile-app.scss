@@ -9,13 +9,50 @@ flex-direction: column;
 gap: 4rem;
 justify-content: center;
 }
+
+.mobile-app__p{
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 140%;
+}
+.mobile-app__p-app{
+    font-weight: bold;
+    line-height: 150%;
+}
+
 .mobile-app__buttons {
     display: flex;
     gap: 2rem;
 }
+
+.mobile-app__text{
+    display: flex;
+    gap: 0.2rem;
+    flex-direction: column;
+}
+
+.mobile-app__button{
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 4rem;
+    border: 1px solid $color-border-dark;   
+    padding: 1.4rem;
+    padding-left: 2rem;
+    padding-right: 5.8rem;
+}
 .mobile-app__button:hover{
-background: $color-border-dark;
+background-color: $color-border-dark;
+transition: all 0.5s;
+}
+
+.mobile-app__button:hover .mobile-app__svg{
+    stroke: $color-light;
+    fill: $color-light;
+}
+
+.mobile-app__button:hover .mobile-app__p{
 color: $color-light;
-transition: all 0.1s ease-out;
-border-radius: 4rem;
+}
+.mobile-app__button:hover .mobile-app__p-app{
+color: $color-light;
 }
