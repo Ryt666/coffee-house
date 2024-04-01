@@ -1,5 +1,6 @@
 html{
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -13,7 +14,15 @@ body{
     padding-bottom: 10rem;
     max-width: 144rem;   
 }
-
+.container-menu{
+    margin: auto;   
+    padding: 0 4rem;
+    max-width: 144rem;   
+}
+a{
+ color: $color-dark;
+ font-weight: 600;
+}
 h1{
     @include font(7.2rem, 600, 105%, $color-light);
 }

@@ -29,10 +29,6 @@ li {
     border-radius: 4rem;
 }
 
-.header__menu-img:hover{
-  border-bottom: 3px solid $color-border-dark;
-  transition: all 0.1s ease-in-out;
-}
 .header__title-main {
     display: block;
     padding: 10rem;
@@ -52,11 +48,26 @@ li {
 .header__title-text, .header__title-p, .header__title-btn {
     margin-bottom: 4rem;
 }
-
-.header__nav-list-li:hover{
-  border-bottom: 3px solid $color-border-dark;
-  transition: all 0.1s ease-in-out;
+.header__nav-list-link{
+  color: $color-dark;
 }
+.header__nav-list-link:hover{
+border-bottom: 3px solid $color-dark;
+transition: all 0.1s;
+}
+
+.header__menu-link:hover{
+  border-bottom: 3px solid $color-dark;
+  transition: all 0.1s;
+  padding-bottom: 8px;
+}
+
+.header__menu-link-menu{
+cursor: default;
+border-bottom: 3px solid $color-dark;
+padding-bottom: 8px;
+}
+
 .header__title-btn-img{
 position: absolute;
   stroke: $color-light;

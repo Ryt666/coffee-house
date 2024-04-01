@@ -91,6 +91,7 @@ body {
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -102,6 +103,17 @@ body {
   padding: 0 4rem;
   padding-bottom: 10rem;
   max-width: 144rem;
+}
+
+.container-menu {
+  margin: auto;
+  padding: 0 4rem;
+  max-width: 144rem;
+}
+
+a {
+  color: #403F3D;
+  font-weight: 600;
 }
 
 h1 {
@@ -182,11 +194,6 @@ li {
   border-radius: 4rem;
 }
 
-.header__menu-img:hover {
-  border-bottom: 3px solid #665F55;
-  transition: all 0.1s ease-in-out;
-}
-
 .header__title-main {
   display: block;
   padding: 10rem;
@@ -212,9 +219,25 @@ li {
   margin-bottom: 4rem;
 }
 
-.header__nav-list-li:hover {
-  border-bottom: 3px solid #665F55;
-  transition: all 0.1s ease-in-out;
+.header__nav-list-link {
+  color: #403F3D;
+}
+
+.header__nav-list-link:hover {
+  border-bottom: 3px solid #403F3D;
+  transition: all 0.1s;
+}
+
+.header__menu-link:hover {
+  border-bottom: 3px solid #403F3D;
+  transition: all 0.1s;
+  padding-bottom: 8px;
+}
+
+.header__menu-link-menu {
+  cursor: default;
+  border-bottom: 3px solid #403F3D;
+  padding-bottom: 8px;
 }
 
 .header__title-btn-img {
@@ -522,6 +545,97 @@ li {
 
 .footer__contacts-img {
   padding-right: 0.8rem;
+}
+
+.menu__title {
+  text-align: center;
+  padding: 0 28rem;
+  padding-bottom: 4rem;
+}
+
+.p__menu {
+  font-weight: 600;
+}
+
+.menu__img {
+  border-radius: 100%;
+  border: 1px solid #C1B6AD;
+  background-color: #C1B6AD;
+  padding: 0.7rem;
+}
+
+.menu__btn {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  border-radius: 65px;
+  border: 1px solid #665F55;
+  padding: 0.8rem;
+  padding-right: 1.6rem;
+}
+
+.menu__btn:hover {
+  background-color: #665F55;
+  color: #C1B6AD;
+}
+.menu__btn:hover > * {
+  color: #E1D4C9;
+}
+
+.menu__btn--active {
+  background-color: #665F55;
+  color: #C1B6AD;
+}
+.menu__btn--active > * {
+  color: #E1D4C9;
+}
+
+.menu__tags {
+  display: flex;
+  justify-content: center;
+  gap: 1.6rem;
+  padding-bottom: 4rem;
+}
+
+.main__menu-card {
+  border-radius: 40px;
+  border: 1px solid #665F55;
+  justify-self: center;
+  overflow: hidden;
+}
+
+.main__menu-card-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 40px;
+}
+
+.main__menu-card img {
+  transition: all 0.3s;
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+  transform: scale(1.1);
+}
+
+.main__menu-card:hover img {
+  transform: scale(1);
+}
+
+.main__menu {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4rem;
+}
+
+.main__menu-text {
+  padding: 2.1rem 1.8rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 15.6rem;
 }
 
 /*# sourceMappingURL=style.css.map */
