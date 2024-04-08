@@ -5,3 +5,22 @@ line-height: $line-height;
 color: $color;
 font-style: $font-style;
 }
+
+@mixin mediaTablet {
+    @media  screen and (max-width: $tablet ){
+        @content;
+    }
+}
+
+
+@mixin mediaDt {
+    @media  screen and (max-width: $desktop){
+        @content;
+    }
+}
+
+@mixin mediaPhone {
+    @media  screen and (max-width: $phone){
+        @content;
+    }
+}

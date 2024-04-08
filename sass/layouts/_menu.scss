@@ -2,6 +2,11 @@
 text-align: center;
 padding: 0 28rem;
 padding-bottom: 4rem;
+
+@include mediaTablet{
+    padding: 0;
+    padding-bottom: 4rem;
+}
 }
 .p__menu{
     font-weight: 600;
@@ -71,6 +76,15 @@ padding-bottom: 4rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 4rem;
+
+    @include mediaTablet{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @include mediaPhone{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 .main__menu-text{
     padding: 2.1rem 1.8rem 2rem 2rem;

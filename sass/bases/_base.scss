@@ -12,12 +12,19 @@ body{
     margin: auto;   
     padding: 0 4rem;
     padding-bottom: 10rem;
-    max-width: 144rem;   
+    max-width: 192rem;  
+    @include mediaPhone{
+        padding: 0 1.6rem;
+        padding-bottom: 10rem;
+     }   
 }
 .container-menu{
     margin: auto;   
     padding: 0 4rem;
-    max-width: 144rem;   
+    max-width: 144rem; 
+    @include mediaPhone{
+        padding: 0 1.6rem;
+     } 
 }
 a{
  color: $color-dark;
@@ -25,10 +32,16 @@ a{
 }
 h1{
     @include font(7.2rem, 600, 105%, $color-light);
+    @include mediaPhone{
+        @include font(4.2rem, 600, 105%, $color-light);
+    }
 }
 
 h2{
     @include font(6rem, 600, 125%, $color-dark);
+    @include mediaPhone{
+        @include font(3.2rem, 600, 105%, $color-dark);
+    }
 }
 h3{
     @include font(2.4rem, 600, 125%, $color-dark);
@@ -41,4 +54,9 @@ p{
 span{
     color:$color-accent;
     font-style: italic;
+}
+
+@keyframes burgerAnimation {
+    from{opacity: 0;}
+    to{opacity: 1;}
 }

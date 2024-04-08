@@ -1,11 +1,16 @@
 .about__title{
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
 }
 
 .about__gallery {
   display: flex;
   justify-content: center;
   gap: 4rem;
+
+  @include mediaTablet{
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .about__gallery-card {
@@ -28,16 +33,25 @@
   object-position: center;
   object-fit: cover;
   transform: scale(1.1);
+
+  @include mediaPhone{
+    transform: scale(2);
+  }
 }
 
 .about__gallery-card-img:hover img {
   transform: scale(1);
+  @include mediaPhone{
+    transform: scale(1.7);
+  }
 }
 .about__gallery-card-big--hor {
-  width: 66rem;
   height: 59rem;
 }
 .about__gallery-card-little--vert {
-  width: 66rem;
   height: 43rem;
+
+  @include mediaTablet{
+    display: none;
+  }
 }

@@ -1,6 +1,12 @@
 .mobile-app__container {
     display: flex;
     gap: 10rem;
+
+    @include mediaTablet{
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    };
 }
 
 .mobile-app__offer{
@@ -23,6 +29,12 @@ justify-content: center;
 .mobile-app__buttons {
     display: flex;
     gap: 2rem;
+
+    @include mediaPhone{
+        display:flex;
+        flex-direction: column;
+        gap: 2rem;  
+    }
 }
 
 .mobile-app__text{
@@ -35,6 +47,8 @@ justify-content: center;
     display: flex;
     gap: 0.8rem;
     border-radius: 4rem;
+    width: 217px;
+    height: 64px;
     border: 1px solid $color-border-dark;   
     padding: 1.4rem;
     padding-left: 2rem;

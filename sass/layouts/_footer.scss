@@ -1,5 +1,9 @@
 .footer__container {
 padding: 0 4rem 4rem 4rem;
+
+@include mediaPhone{
+    padding: 0 1.6rem 4rem 1.6rem;
+}
 }
 .footer__inner{
 background-color: $color-border-dark;
@@ -11,6 +15,16 @@ border-radius: 4rem;
     justify-content:flex-start;
     gap:10rem;
     padding: 10rem;
+
+    @include mediaTablet{
+        flex-direction: column;
+        padding: 10rem 6rem;
+    }
+
+    @include mediaPhone{
+        padding: 6rem 1.6rem;
+        gap:4rem;
+    }
 }
 .footer__left-section {
     display: flex;
